@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self';">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+   <h1 class="title focus-title">Calculador de imc</h1>
+   <form method="POST" action=""  class="form">
+	  <h1 class="title">Tabela de imc</h1>
+	  <div class="general">
+		 <div>
+			<h2>Imc</h2>
+			<p> Menor do que 18,5</p> 
+			<p> Entre 18,5 e 24,9 </p>
+			<p> Entre 25 e 29,9 </p>
+			<p> Entre 30 e 34,9 </p> 
+			<p> Entre 35 e 39,9 </p>
+		    <p> Maior do que 40</p> 
+		 </div>
+		 <div>
+			<h2>Resultado</h2>
+			<p> Abaixo do peso </p>
+			<p> Peso normal </p>
+			<p> Sobrepeso </p> 
+			<p> Obesidade grau 1 </p>
+			<p> Obesidade grau 2 </p> 
+			<p> Obesidade grau 3 </p>
+		 </div>
+	  </div>
+	  <h2>Sua altura</h2>
+	  <input type="string"  class="number-imput height-input">
+	  <h2>Seu peso</h2>
+	  <input type="string"  class="number-input weight-input">
+	  <div class="button">
+		 <button type="submit">Enviar</button>
+	  </div>
+	  <div class="result">
+	  </div>
+   </form>
+   <footer class="footer">
+	  Made with &hearts; by <a href="https://github.com/David73Coloa">David</a> 
+   </footer>
+</body>
+<script src="./scripts/index.js"></script>
+</html>
