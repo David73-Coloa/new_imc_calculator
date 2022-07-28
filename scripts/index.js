@@ -3,8 +3,9 @@ let heightInput = document.querySelector(".height-input")
 const result = document.querySelector(".result")
 const form = document.querySelector(".form")
 let status;
-form.addEventListener("submit",e => {
+form.addEventListener("submit",e => { 
    e.preventDefault()
+   result.classList.remove("hidden")
    let imc = weightInput.value / (heightInput.value ** 2)
    if (heightInput.value >= 2.10 || weightInput.value >= 600 || weightInput.value <= 0 || heightInput.value <= 0 || !imc) {
 	  result.classList.remove("sucess")
