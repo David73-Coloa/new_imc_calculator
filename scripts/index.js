@@ -9,7 +9,14 @@ form.addEventListener("submit",e => {
    if (heightInput.value >= 2.10 || weightInput.value >= 600 || weightInput.value <= 0 || heightInput.value <= 0 || !imc) {
 	  result.classList.remove("sucess")
 	  result.classList.add("error")
-	  return result.innerHTML = "Preencha os campos corretamente!"
+	  result.innerHTML = "Preencha os campos corretamente!"
+	  return setTimeout(() => {
+		 //result.style.transition = "background 2s"
+	    result.classList.add("hidden")
+		 //result.style.background = "#fff"
+		 //return result.innerHTML = ""
+
+	  },5000)
    }
    result.classList.remove("error")
    result.classList.add("sucess")

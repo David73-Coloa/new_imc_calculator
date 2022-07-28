@@ -17,12 +17,13 @@ body {
    background-color: var(--background);
 
 }
+
 .title {
    text-align: center;
    color: var(--blue);
 }
 form input {
-   height:30px;
+   height:40px;
    border-radius: 7px;
    width:60%;
    border-color:var(--input-border);
@@ -71,9 +72,11 @@ button {
 }
 .error {
    background-color:var(--red);
-
 }
-
+.hidden {
+   transition: background 2s;
+   background: #fff;
+}
 .footer {
    text-align: center;
    color:var(--white);
