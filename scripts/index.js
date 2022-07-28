@@ -10,13 +10,7 @@ form.addEventListener("submit",e => {
 	  result.classList.remove("sucess")
 	  result.classList.add("error")
 	  result.innerHTML = "Preencha os campos corretamente!"
-	  return setTimeout(() => {
-		 //result.style.transition = "background 2s"
-	    result.classList.add("hidden")
-		 //result.style.background = "#fff"
-		 //return result.innerHTML = ""
-
-	  },5000)
+	  return setTimeout(() => result.classList.add("hidden"),5000)
    }
    result.classList.remove("error")
    result.classList.add("sucess")
