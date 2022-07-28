@@ -15,6 +15,7 @@
 }
 body {
    background-color: var(--background);
+
 }
 .title {
    text-align: center;
@@ -31,11 +32,17 @@ form input:focus {
 }
 
 form {
-   margin: 50px;
    padding:35px; 
    background-color: var(--white);
-
+   max-width:800px; 
 }
+
+@media (min-width: 800px) and (orientation: landscape) {
+   form {
+	  margin:30px 300px;
+   }
+}
+
 .general {
    display: flex;
    justify-content: space-between;
